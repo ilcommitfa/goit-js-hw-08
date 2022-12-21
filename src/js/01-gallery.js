@@ -3,12 +3,12 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
-const galleryContainer = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 const galleryMarkup = makeGalleryMarkup(galleryItems);
-galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
+gallery.insertAdjacentHTML('beforeend', galleryMarkup);
 
-function makeGalleryMarkup(pictures) {
-  return pictures
+function makeGalleryMarkup(galleryItems) {
+  return galleryItems
     .map(({ preview, original, description }) => {
       return `<div class="gallery__item">
  <a class="gallery__item" href="${original}">
