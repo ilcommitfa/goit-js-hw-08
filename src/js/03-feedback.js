@@ -1,5 +1,5 @@
 import storageAPI from './storage';
-var throttle = require('lodash.throttle');
+const throttle = require('lodash.throttle');
 
 let form = document.querySelector('.feedback-form');
 initPage();
